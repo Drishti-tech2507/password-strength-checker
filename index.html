@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop class="bg-video">
+    <source src="/Users/drishti/Documents/Password checker/6330779-hd_1920_1080_30fps.mp4" type="video/mp4">
+</video>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- Centered App -->
+<div class="wrapper">
+    <div class="container">
+        <h2>🔐 Password Strength Checker</h2>
+
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter password"
+            oninput="checkStrength()"
+        >
+
+        <div class="bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <p class="strength" id="strengthText"></p>
+        <p class="crack-time" id="crackTime"></p>
+
+        <ul id="tips"></ul>
+
+        <p class="privacy">
+            🔒 Password is analyzed locally and never stored
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
